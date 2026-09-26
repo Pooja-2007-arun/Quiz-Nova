@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizNova - Brain Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🧠 QuizNova</h1>
+        <p>The Ultimate Brain Challenge</p>
+    </header>
+
+    <main class="container">
+        <h2>Choose Your Challenge</h2>
+
+        <div class="game-modes">
+            <button onclick="startGame('memory')">
+                🧠 Memory Challenge
+            </button>
+
+            <button onclick="startGame('math')">
+                🔢 Math Challenge
+            </button>
+
+            <button onclick="startGame('quiz')">
+                🌍 General Knowledge
+            </button>
+        </div>
+
+       <section id="game-area">
+    <h2 id="question">Welcome to QuizNova!</h2>
+
+    <p id="progress">Question: 0 / 10</p>
+
+    <div id="options"></div>
+
+    <p id="feedback"></p>
+
+    <p id="score">Score: 0</p>
+</section>
+
+<!-- Results Screen -->
+<section id="results" style="display: none;">
+    <h2>🎉 Game Over!</h2>
+
+    <h3 id="final-score">Your Score: 0</h3>
+
+    <p id="correct-count">Correct Answers: 0</p>
+
+    <p id="wrong-count">Wrong Answers: 0</p>
+
+    <p id="accuracy">Accuracy: 0%</p>
+
+    <button onclick="playAgain()">Play Again</button>
+</section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
